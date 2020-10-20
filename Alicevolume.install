@@ -1,0 +1,18 @@
+{
+    "name": "Alicevolume",
+    "version": "0.0.1",
+    "icon": "fab fa-battle-net",
+    "category": "assistance",
+    "author": "lazzaAU",
+    "maintainers": [],
+    "desc": "Control the volume of alice",
+    "aliceMinVersion": "1.0.0-b3",
+    "pipRequirements": [],
+    "systemRequirements": [],
+    "conditions": {
+        "lang": [
+            "en"
+        ],
+        "asrArbitraryCapture": true
+    }
+}
