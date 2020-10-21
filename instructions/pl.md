@@ -10,11 +10,11 @@ po prostu powiedzieć coś takiego
 
 W typie terminalu PI
 
-- `` `amixer```
+- ```amixer```
 
 Powinieneś zobaczyć linię podobną do tej:
 
-- `` `Proste sterowanie mikser 'słuchawek', 0```
+- ```Proste sterowanie mikser 'słuchawek', 0```
 
 Co szukasz jest „Headphone” lub może masz „Headphones” lub „kapitan” etc
 

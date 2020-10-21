@@ -10,11 +10,11 @@ nur sagen, so etwas wie
 
 In dem Terminaltyp des pis
 
-- `` `amixer```
+- ```amixer```
 
 Sie sollten eine Zeile wie diese sehen:
 
-- `` `Einfache Mischersteuerung 'Kopfhörer', 0```
+- ```Einfache Mischersteuerung 'Kopfhörer', 0```
 
 Was für Ihre Suche ist die ‚Kopfhörer‘ oder vielleicht haben Sie „Kopfhörer“ oder ‚Master‘ usw.
 

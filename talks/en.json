@@ -1,7 +1,13 @@
 {
 	"dialogMessage1": {
 		"default": [
-			"{0} done"
+			"set to {0}",
+			"Volume is now at {0}",
+			"Audio level is now {0}",
+			"Done. sound level set to {0}",
+			"ok",
+			"done",
+			"sure"
 		],
 		"short": [
 			"ok"

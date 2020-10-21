@@ -10,11 +10,11 @@ basta dire qualcosa di simile
 
 Nel tipo di terminale del pi
 
-- `` `amixer```
+- ```amixer```
 
 Si dovrebbe vedere una linea simile a questa:
 
-- `` `controllo del mixer semplice 'cuffia', 0```
+- ```controllo del mixer semplice 'cuffia', 0```
 
 Quello che cercate è la 'cuffia' o forse hai "Cuffie" o 'Master', ecc
 

@@ -14,7 +14,7 @@ class AliceVolume(AliceSkill):
 	@IntentHandler('setSoundLevel')
 	def listenForVolumeRequest(self, session: DialogSession, **_kwargs):
 		level = ""
-
+		card = self.getConfig('audioOut')
 		if 'setSoundLevel' in session.intentName:
 			level = f'{session.slotValue("volume")}%'
 
@@ -27,14 +27,14 @@ class AliceVolume(AliceSkill):
 
 		portName = self.getConfig("portName")
 
-		self.adjustVolumePi(level=level, portName=portName)
+		self.adjustVolumePi(level=level,card=card,  portName=portName)
 		self.endDialog(
 			sessionId=session.sessionId,
 			text=self.randomTalk(text="dialogMessage1", replace=[level])
 		)
 
 	@staticmethod
-	def adjustVolumePi(level: str, portName: str):
-		subprocess.run(['amixer', '-M', '-q', 'set', portName, level])
+	def adjustVolumePi(level: str, card: str, portName: str):
+		subprocess.run(['amixer', card, '-M', '-q', 'set', portName, level])
 
 

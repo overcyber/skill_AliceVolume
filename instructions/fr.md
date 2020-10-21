@@ -10,11 +10,11 @@ juste dire quelque chose comme
 
 Dans le type de terminal de pi
 
-- `` `amixer```
+- ```amixer```
 
 Vous devriez voir une ligne semblable à celle-ci:
 
-- `` `groupe de mixer 'casque', 0```
+- ```groupe de mixer 'casque', 0```
 
 Ce que vous cherchez est le « casque » ou vous avez peut-être « casque » ou « Master », etc.
 

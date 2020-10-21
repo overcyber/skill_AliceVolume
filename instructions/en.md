@@ -20,7 +20,10 @@ What your looking for is the 'Headphone' or maybe you have "Headphones" or 'Mast
 Enter what ever it is that you have when doing that command, into the "portName" field 
 of the skill settings
 
-
+then do
+ - ```aplay -l'''
+   and see what your card number is. then select that from the drop list in the skill settings
+   
  Currently HDMI or USB are not configured so i know they don't work 
 
 Please discuss in discord for additions you find that need added
