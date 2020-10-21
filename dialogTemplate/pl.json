@@ -1,0 +1,91 @@
+{
+    "skill": "AliceVolume",
+    "slotTypes": [
+        {
+            "name": "raiseVolume",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "raise",
+                    "synonyms": [
+                        "zwiększać",
+                        "głośniejszy",
+                        "głośniejsze"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lowerVolume",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "lower",
+                    "synonyms": [
+                        "zmniejszać",
+                        "redukować",
+                        "ciszej"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "setSoundLevel",
+            "enabledByDefault": true,
+            "utterances": [
+                "Zestaw objętość {50 procent:=>volume}",
+                "{30} {0 procent",
+                "Zmiana objętości do 10 procent {{0}"
+            ],
+            "slots": [
+                {
+                    "name": "volume",
+                    "required": false,
+                    "type": "snips/percentage",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "adjustVolume",
+            "enabledByDefault": true,
+            "utterances": [
+                "{Przebicie:=>raiseVolume} Głośność {10 procent:=>volume}",
+                "{Niższy:=>lowerVolume} Głośność {30 procent:=>volume}",
+                "{Wzrost:=>raiseVolume} {5 procent objętości:=>volume}",
+                "{{0} wzrost objętości o 13 procent {{0}",
+                "{{0} zmniejszenie objętości o {23 procent:=>lowerVolume}",
+                "{Niższy:=>lowerVolume} dźwięku o {80 procent:=>volume}",
+                "{Niższy:=>lowerVolume} Głośność {54 procent:=>volume}",
+                "być {13 procent:=>volume}:=>lowerVolume} {ciszej proszę",
+                "być {64 procent:=>volume} {głośniejsze:=>lowerVolume} proszę"
+            ],
+            "slots": [
+                {
+                    "name": "volume",
+                    "required": false,
+                    "type": "snips/percentage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "lowerVolume",
+                    "required": false,
+                    "type": "lowerVolume",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "raiseVolume",
+                    "required": false,
+                    "type": "raiseVolume",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

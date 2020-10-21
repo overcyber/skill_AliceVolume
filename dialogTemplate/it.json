@@ -1,0 +1,91 @@
+{
+    "skill": "AliceVolume",
+    "slotTypes": [
+        {
+            "name": "raiseVolume",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "raise",
+                    "synonyms": [
+                        "aumentare",
+                        "più forte",
+                        "più rumoroso"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lowerVolume",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "lower",
+                    "synonyms": [
+                        "diminuire",
+                        "ridurre",
+                        "più tranquillo"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "setSoundLevel",
+            "enabledByDefault": true,
+            "utterances": [
+                "volume impostato a {50 per cento:=>volume}",
+                "{30 per cento:=>volume}",
+                "variazione di volume a {10 per cento:=>volume}"
+            ],
+            "slots": [
+                {
+                    "name": "volume",
+                    "required": false,
+                    "type": "snips/percentage",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "adjustVolume",
+            "enabledByDefault": true,
+            "utterances": [
+                "{Raise:=>raiseVolume} {volume del 10 per cento:=>volume}",
+                "{Inferiore:=>lowerVolume} {volume 30 per cento:=>volume}",
+                "{Aumento:=>raiseVolume} {volume di 5 per cento:=>volume}",
+                "{Aumento:=>raiseVolume} {volume del 13 per cento:=>volume}",
+                "{Diminuzione:=>lowerVolume} {volume del 23 per cento:=>volume}",
+                "{Inferiore:=>lowerVolume} {suono il 80 per cento:=>volume}",
+                "{Inferiore:=>lowerVolume} {volume del 54 per cento:=>volume}",
+                "essere {13 per cento:=>volume} {tranquilla:=>lowerVolume} si prega",
+                "essere {64 per cento:=>volume} {rumoroso:=>lowerVolume} si prega"
+            ],
+            "slots": [
+                {
+                    "name": "volume",
+                    "required": false,
+                    "type": "snips/percentage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "lowerVolume",
+                    "required": false,
+                    "type": "lowerVolume",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "raiseVolume",
+                    "required": false,
+                    "type": "raiseVolume",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

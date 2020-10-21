@@ -1,0 +1,10 @@
+{
+    "dialogMessage1": {
+        "default": [
+            "{0} getan"
+        ],
+        "short": [
+            "in Ordnung"
+        ]
+    }
+}

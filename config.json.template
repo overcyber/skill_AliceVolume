@@ -1,0 +1,21 @@
+{
+	"audioOut": {
+		"defaultValue": "Pi",
+		"dataType": "list",
+		"isSensitive": false,
+		"values": {
+			"Pi audio jack": "-c0",
+			"audio jack card 1": "-c1",
+			"audio jack card 2": "-c2",
+			"HDMI": "HDMI",
+			"USB": "USB"
+		},
+		"description": "Choose audio port your using"
+	},
+	"portName": {
+		"defaultValue": "Headphone",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "Audio output port name"
+	}
+}

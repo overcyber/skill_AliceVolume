@@ -1,0 +1,10 @@
+{
+    "dialogMessage1": {
+        "default": [
+            "{0} fait"
+        ],
+        "short": [
+            "D'accord"
+        ]
+    }
+}

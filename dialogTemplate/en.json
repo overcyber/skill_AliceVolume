@@ -1,34 +1,88 @@
 {
-	"skill": "Alicevolume",
+	"skill": "AliceVolume",
 	"slotTypes": [
 		{
-			"name": "DummySlot",
+			"name": "raiseVolume",
 			"matchingStrictness": null,
-			"automaticallyExtensible": false,
+			"automaticallyExtensible": true,
 			"useSynonyms": true,
 			"values": [
 				{
-					"value": "foo",
+					"value": "raise",
 					"synonyms": [
-						"bar"
+						"increase",
+						"louder",
+						"noisier"
+					]
+				}
+			]
+		},
+		{
+			"name": "lowerVolume",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "lower",
+					"synonyms": [
+						"decrease",
+						"reduce",
+						"quieter"
 					]
 				}
 			]
 		}
-	],
+			],
 	"intents": [
 		{
-			"name": "Dummy",
+			"name": "setSoundLevel",
 			"enabledByDefault": true,
 			"utterances": [
-				"dummy {foo:=>DummySlotName}",
-				"bar"
+				"set volume to {50 percent:=>volume}",
+				"{30 percent:=>volume}",
+				"change volume to {10 percent:=>volume}"
 			],
 			"slots": [
 				{
-					"name": "DummySlotName",
+					"name": "volume",
 					"required": false,
-					"type": "DummySlot",
+					"type": "snips/percentage",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "adjustVolume",
+			"enabledByDefault": true,
+			"utterances": [
+				"{raise:=>raiseVolume} volume by {10 percent:=>volume}",
+				"{lower:=>lowerVolume} volume by {30 percent:=>volume}",
+				"{increase:=>raiseVolume} volume {5 percent:=>volume}",
+				"{increase:=>raiseVolume} volume by {13 percent:=>volume}",
+				"{decrease:=>lowerVolume} volume by {23 percent:=>volume}",
+				"{lower:=>lowerVolume} sound by {80 percent:=>volume}",
+				"{lower:=>lowerVolume} volume by {54 percent:=>volume}",
+				"be {13 percent:=>volume} {quieter:=>lowerVolume} please",
+				"be {64 percent:=>volume} {noisier:=>lowerVolume} please"
+			],
+			"slots": [
+				{
+					"name": "volume",
+					"required": false,
+					"type": "snips/percentage",
+					"missingQuestion": ""
+				},
+				{
+					"name": "lowerVolume",
+					"required": false,
+					"type": "lowerVolume",
+					"missingQuestion": ""
+				},
+				{
+					"name": "raiseVolume",
+					"required": false,
+					"type": "raiseVolume",
 					"missingQuestion": ""
 				}
 			]
