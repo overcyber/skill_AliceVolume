@@ -1,7 +1,13 @@
 {
     "dialogMessage1": {
         "default": [
-            "{0} fait"
+            "réglé sur {0}",
+            "Le volume est maintenant à {0}",
+            "Niveau audio est maintenant {0}",
+            "Terminé. jeu de niveau sonore à {0}",
+            "D'accord",
+            "terminé",
+            "sûr"
         ],
         "short": [
             "D'accord"

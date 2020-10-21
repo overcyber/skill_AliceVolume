@@ -1,7 +1,13 @@
 {
     "dialogMessage1": {
         "default": [
-            "{0} getan"
+            "auf {0}",
+            "Die Lautstärke ist jetzt auf {0}",
+            "Audiopegel ist jetzt {0}",
+            "Erledigt. Schallpegels auf {0}",
+            "in Ordnung",
+            "erledigt",
+            "sicher"
         ],
         "short": [
             "in Ordnung"

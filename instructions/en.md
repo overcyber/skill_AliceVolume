@@ -8,7 +8,7 @@ just say something like
 Alternatively increase or decrease the volume with 
 
 - Hey Alice/Snips
-- raise the volume 5 percent, or decrease volume by 20 percent
+- raise the volume 5 percent, or decrease volume by 20 percent etc
 
 #SETUP
 
@@ -26,12 +26,15 @@ Enter what ever it is that you have when doing that command, into the "portName"
 of the skill settings
 
 then do
+
  - ```aplay -l```
  
    and see what your card number is. Then select that from the drop list in the skill settings
 
-EG: respeaker 2 could be card 1
+EG: respeaker 2 is likely card 1
    
  Currently HDMI or USB are not configured so i know they don't work 
 
-Please discuss in discord for additions you find that need added
+Please discuss in discord any additions you find that need added.
+
+

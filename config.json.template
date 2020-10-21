@@ -1,12 +1,12 @@
 {
 	"audioOut": {
-		"defaultValue": "Pi",
+		"defaultValue": "audio card 0",
 		"dataType": "list",
 		"isSensitive": false,
 		"values": {
-			"Pi audio jack": "-c0",
-			"audio jack card 1": "-c1",
-			"audio jack card 2": "-c2",
+			"audio card 0": "-c0",
+			"audio card 1": "-c1",
+			"audio card 2": "-c2",
 			"HDMI": "HDMI",
 			"USB": "USB"
 		},
