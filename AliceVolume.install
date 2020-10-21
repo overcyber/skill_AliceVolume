@@ -1,17 +1,22 @@
 {
-    "name": "Alicevolume",
+    "name": "AliceVolume",
+    "speakableName": "adjust audio volume",
     "version": "0.0.1",
     "icon": "fab fa-battle-net",
     "category": "assistance",
-    "author": "lazzaAU",
+    "author": "lazza",
     "maintainers": [],
-    "desc": "Control the volume of alice",
+    "desc": "Control the volume of Alice",
     "aliceMinVersion": "1.0.0-b3",
     "pipRequirements": [],
     "systemRequirements": [],
     "conditions": {
         "lang": [
-            "en"
+            "en",
+            "de",
+            "it",
+            "fr",
+            "pl"
         ],
         "asrArbitraryCapture": true
     }
