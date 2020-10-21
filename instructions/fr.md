@@ -34,6 +34,4 @@ alors fais
 
 EG: respeaker 2 est probablement la carte 1
    
- Actuellement HDMI ou USB ne sont pas configurés pour que je sais qu'ils ne fonctionnent pas
-
 S'il vous plaît discuter en désaccord les ajouts que vous constatez que le besoin ajouté.

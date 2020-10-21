@@ -34,6 +34,4 @@ Quindi fa
 
 EG: respeaker 2 è probabile scheda 1
    
- Attualmente HDMI o USB non sono configurati in modo che io so che non funzionano
-
 Si prega di discutere in discordia eventuali aggiunte a trovare quel bisogno aggiunto.

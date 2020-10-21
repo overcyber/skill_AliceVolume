@@ -33,7 +33,7 @@ then do
 
 EG: respeaker 2 is likely card 1
    
- Currently HDMI or USB are not configured so i know they don't work 
+ 
 
 Please discuss in discord any additions you find that need added.
 

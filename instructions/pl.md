@@ -34,6 +34,4 @@ następnie zrobić
 
 EG: respeaker 2 prawdopodobnie karta 1
    
- Obecnie HDMI lub USB nie są skonfigurowane tak, wiem, że nie działają
-
 Proszę omówić niezgody żadnych dodatków można znaleźć taką potrzebę dodaną.

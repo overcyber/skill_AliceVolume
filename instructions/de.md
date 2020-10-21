@@ -34,6 +34,5 @@ dann mach
 
 Beispiel: respeaker 2 ist wahrscheinlich Karte 1
    
- Derzeit HDMI oder USB ist nicht konfiguriert, so dass ich sie nicht Arbeit wissen tun
-
+ 
 Bitte besprechen Sie in Zwietracht etwaige Ergänzungen Sie diesen Bedarf finden hinzugefügt.
