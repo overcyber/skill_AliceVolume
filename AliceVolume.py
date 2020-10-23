@@ -54,15 +54,14 @@ class AliceVolume(AliceSkill):
 		# if no error code
 		if not result.returncode:
 			# get the true volume level for the dialog output
-			#amixerResult = self.Commons.runSystemCommand('amixer')
-			#spokenLevel = re.findall(r"\[(.*?)]", amixerResult.stdout.decode('utf-8'))
-			#todo get the true volume reading from alsamixer NOT amixer cause amixer lies
+			amixerResult = self.Commons.runSystemCommand(f'amixer -M get {portName[0]}'.split())
+			spokenLevel = re.findall(r"\[(.*?)]", amixerResult.stdout.decode('utf-8'))
 
 			action = ['set', 'lowered', 'raised']
 
 			self.endDialog(
 				sessionId=sessionId,
-				text=self.randomTalk(text="dialogMessage2", replace=[action[AliceVolume._ADJUSTED_VOLUME]])
+				text=self.randomTalk(text="dialogMessage2", replace=[action[AliceVolume._ADJUSTED_VOLUME], spokenLevel[0]])
 			)
 
 			AliceVolume._ADJUSTED_VOLUME = 0

@@ -9,9 +9,10 @@
 	},
 	"dialogMessage2": {
 		"default": [
-			"Volume has been {0}",
-			"Audio level {0} ",
-			"Done. sound level has been {0} ",
+			"{0} to {1}",
+			"Volume is now {0} to {1}",
+			"Audio level is now {0} to {1}",
+			"Done. sound level {0} to {1}",
 			"ok",
 			"done",
 			"sure"

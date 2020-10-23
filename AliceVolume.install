@@ -1,7 +1,7 @@
 {
     "name": "AliceVolume",
     "speakableName": "adjust audio volume",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icon": "fab fa-battle-net",
     "category": "assistance",
     "author": "lazza",
