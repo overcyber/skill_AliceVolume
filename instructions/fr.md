@@ -15,18 +15,6 @@ augmenter ou diminuer encore le volume avec
 
 Dans le type de terminal de pi
 
-- `` `amixer```
-
-Vous devriez voir une ligne semblable à celle-ci:
-
-- `` `groupe de mixer 'casque', 0```
-
-Ce que vous cherchez est le « casque » ou vous avez peut-être « casque » ou « Master », etc.
-
-Entrez ce que jamais il est que vous avez lorsque vous faites cette commande, dans le champ « portName »
-des paramètres de compétences
-
-alors fais
 
  - `` `aplay -l```
  

@@ -15,19 +15,6 @@ Alternativamente aumentare o diminuire il volume con
 
 Nel tipo di terminale del pi
 
-- `` `amixer```
-
-Si dovrebbe vedere una linea simile a questa:
-
-- `` `controllo del mixer semplice 'cuffia', 0```
-
-Quello che cercate è la 'cuffia' o forse hai "Cuffie" o 'Master', ecc
-
-Inserisci che cosa mai è che si ha quando si fa quel comando, nel campo "portName"
-delle impostazioni di abilità
-
-Quindi fa
-
  - `` `aplay -l```
  
    e vedere che cosa il vostro numero di carta è. Selezionare quindi che dal menu nelle impostazioni di abilità

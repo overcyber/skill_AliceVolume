@@ -15,18 +15,6 @@ erhöhen oder verringern Alternativ die Lautstärke mit
 
 In dem Terminaltyp des pis
 
-- `` `amixer```
-
-Sie sollten eine Zeile wie diese sehen:
-
-- `` `Einfache Mischersteuerung 'Kopfhörer', 0```
-
-Was für Ihre Suche ist die ‚Kopfhörer‘ oder vielleicht haben Sie „Kopfhörer“ oder ‚Master‘ usw.
-
-Geben Sie, was immer es ist, dass Sie, wenn dieser Befehl zu tun, in die „portname“ -Feld
-der Fähigkeit Einstellungen
-
-dann mach
 
  - `` `aplay -l```
  

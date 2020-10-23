@@ -13,21 +13,6 @@ Alternatywnie zwiększyć lub zmniejszyć głośność
 
 #USTAWIAĆ
 
-W typie terminalu PI
-
-- `` `amixer```
-
-Powinieneś zobaczyć linię podobną do tej:
-
-- `` `Proste sterowanie mikser 'słuchawek', 0```
-
-Co szukasz jest „Headphone” lub może masz „Headphones” lub „kapitan” etc
-
-Wpisz co kiedykolwiek jest to, że trzeba, gdy robi to polecenie, w polu „nazwa_portu”
-ustawień umiejętności
-
-następnie zrobić
-
  - `` `aplay -l```
  
    i zobaczyć, co jest numer karty. Następnie wybierz, który z listy rozwijanej w ustawieniach umiejętności
