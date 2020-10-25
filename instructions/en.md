@@ -20,7 +20,7 @@ In the pi's terminal type
 
 EG: respeaker 2 is likely card 1
    
- NOTE: if you choose nothing it will default to card0 
+ NOTE: if you choose nothing it will default to card0
 
 Please discuss in discord any additions you find that need added.
 
