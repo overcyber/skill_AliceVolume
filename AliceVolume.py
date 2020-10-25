@@ -21,7 +21,7 @@ class AliceVolume(AliceSkill):
 
 		card = self.getConfig('audioOut')
 
-		# if no card selected defaultt to card0
+		# if no card selected default to card0
 		if not card:
 			card = '-c0'
 
