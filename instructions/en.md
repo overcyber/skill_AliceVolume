@@ -18,7 +18,7 @@ In the pi's terminal type
  
    and see what your card number is. Then select that from the drop list in the skill settings
 
-EG: respeaker 2 is likely card 1
+EG: respeaker 2 is likely card 1 
    
  NOTE: if you choose nothing it will default to card0
 
