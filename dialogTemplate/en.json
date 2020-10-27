@@ -64,7 +64,7 @@
 				"{lower:=>lowerVolume} sound by {80 percent:=>volume}",
 				"{lower:=>lowerVolume} volume by {54 percent:=>volume}",
 				"be {13 percent:=>volume} {quieter:=>lowerVolume} please",
-				"be {64 percent:=>volume} {noisier:=>lowerVolume} please"
+				"be {64 percent:=>volume} {noisier:=>raiseVolume} please"
 			],
 			"slots": [
 				{
