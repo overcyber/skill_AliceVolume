@@ -10,9 +10,8 @@
 				{
 					"value": "raise",
 					"synonyms": [
-						"increase",
-						"louder",
-						"noisier"
+						"erhöhe",
+						"lauter"
 					]
 				}
 			]
@@ -26,9 +25,9 @@
 				{
 					"value": "lower",
 					"synonyms": [
-						"decrease",
-						"reduce",
-						"quieter"
+						"verringere",
+						"reduziere",
+						"leiser"
 					]
 				}
 			]
@@ -39,9 +38,9 @@
 			"name": "setSoundLevel",
 			"enabledByDefault": true,
 			"utterances": [
-				"set volume to {50 percent:=>volume}",
-				"{30 percent:=>volume}",
-				"change volume to {10 percent:=>volume}"
+				"Setze die Lautstärke auf {50 Prozent:=>volume}",
+				"{30 Prozent:=>volume}",
+				"Ändere die Lautstärke auf {10 Prozent:=>volume}"
 			],
 			"slots": [
 				{
@@ -56,15 +55,15 @@
 			"name": "adjustVolume",
 			"enabledByDefault": true,
 			"utterances": [
-				"{raise:=>raiseVolume} volume by {10 percent:=>volume}",
-				"{lower:=>lowerVolume} volume by {30 percent:=>volume}",
-				"{increase:=>raiseVolume} volume {5 percent:=>volume}",
-				"{increase:=>raiseVolume} volume by {13 percent:=>volume}",
-				"{decrease:=>lowerVolume} volume by {23 percent:=>volume}",
-				"{lower:=>lowerVolume} sound by {80 percent:=>volume}",
-				"{lower:=>lowerVolume} volume by {54 percent:=>volume}",
-				"be {13 percent:=>volume} {quieter:=>lowerVolume} please",
-				"be {64 percent:=>volume} {noisier:=>raiseVolume} please"
+				"{Erhöhe:=>raiseVolume} die Lautstärke um {10 Prozent:=>volume}",
+				"{verringere:=>lowerVolume} die Lautstärke um {30 Prozent:=>volume}",
+				"{Erhöhe:=>raiseVolume} volume um {5 Prozent:=>volume}",
+				"{reduziere:=>lowerVolume} die Lautstärke um {23 Prozent:=>volume}",
+				"{leiser:=>lowerVolume} um {80 Prozent:=>volume}",
+				"{54 Prozent:=>volume} {leiser:=>lowerVolume}",
+				"{54 Prozent:=>volume} {lauter:=>raiseVolume}",
+				"sei {13 Prozent:=>volume} {leiser:=>lowerVolume} bitte",
+				"sei {64 Prozent:=>volume} {lauter:=>raiseVolume} bitte"
 			],
 			"slots": [
 				{
