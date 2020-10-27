@@ -1,0 +1,90 @@
+{
+	"skill": "AliceVolume",
+	"slotTypes": [
+		{
+			"name": "raiseVolume",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "raise",
+					"synonyms": [
+						"erhöhe",
+						"lauter"
+					]
+				}
+			]
+		},
+		{
+			"name": "lowerVolume",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "lower",
+					"synonyms": [
+						"verringere",
+						"reduziere",
+						"leiser"
+					]
+				}
+			]
+		}
+			],
+	"intents": [
+		{
+			"name": "setSoundLevel",
+			"enabledByDefault": true,
+			"utterances": [
+				"Setze die Lautstärke auf {50 Prozent:=>volume}",
+				"{30 Prozent:=>volume}",
+				"Ändere die Lautstärke auf {10 Prozent:=>volume}"
+			],
+			"slots": [
+				{
+					"name": "volume",
+					"required": false,
+					"type": "snips/percentage",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "adjustVolume",
+			"enabledByDefault": true,
+			"utterances": [
+				"{Erhöhe:=>raiseVolume} die Lautstärke um {10 Prozent:=>volume}",
+				"{verringere:=>lowerVolume} die Lautstärke um {30 Prozent:=>volume}",
+				"{Erhöhe:=>raiseVolume} volume um {5 Prozent:=>volume}",
+				"{reduziere:=>lowerVolume} die Lautstärke um {23 Prozent:=>volume}",
+				"{leiser:=>lowerVolume} um {80 Prozent:=>volume}",
+				"{54 Prozent:=>volume} {leiser:=>lowerVolume}",
+				"{54 Prozent:=>volume} {lauter:=>raiseVolume}",
+				"sei {13 Prozent:=>volume} {leiser:=>lowerVolume} bitte",
+				"sei {64 Prozent:=>volume} {lauter:=>raiseVolume} bitte"
+			],
+			"slots": [
+				{
+					"name": "volume",
+					"required": false,
+					"type": "snips/percentage",
+					"missingQuestion": ""
+				},
+				{
+					"name": "lowerVolume",
+					"required": false,
+					"type": "lowerVolume",
+					"missingQuestion": ""
+				},
+				{
+					"name": "raiseVolume",
+					"required": false,
+					"type": "raiseVolume",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}

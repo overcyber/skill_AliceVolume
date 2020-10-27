@@ -1,0 +1,16 @@
+{
+	"dialogMessage1": {
+		"default": [
+			"Auf {0} gesetzt",
+			"Die Lautstärke ist jetzt {0}",
+			"Das Audio level ist jetzt {0}",
+			"Erledigt. Lautstärke wurde auf {0} gesetzt",
+			"ok",
+			"Erledigt.",
+			"Sicher."
+		],
+		"short": [
+			"ok"
+		]
+	}
+}

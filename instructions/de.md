@@ -1,26 +1,36 @@
 
-<Span style = "color: #ff0000;"> <strong> Mit Geschick dies das Volumen von Alice on the fly anpassen </strong> </span>
+<Span style = "color: #ff0000;"> <strong> Passe die Lautstärke von Alice an! </strong> </span>
 
-nur sagen, so etwas wie
+Sag nur etwas, wie:
 
 - Hey Alice / Snips
-- 40 Prozent oder eingestellte Lautstärke auf 60 Prozent oder die Lautstärke auf 10 Prozent usw.
+- Lautstärke auf 40 Prozent
 
 erhöhen oder verringern Alternativ die Lautstärke mit
 
 - Hey Alice / Snips
-- das Volumen erhöhen 5 Prozent, oder Verringern der Lautstärke um 20 Prozent usw.
+- Erhöhe die Lautstärke um 5 Prozent, oder Verringere die Lautstärke um 20 Prozent
 
 #KONFIGURATION
 
-In dem Terminaltyp des pis
+Wähle dich per SSH im terminal ein und gib ein:
 
+- `` `amixer```
+
+Jetzt solltest du eine Einstellung finden wie:
+
+- ```Simple mixer control 'Headphone',0```
+
+Aus dieser Zeile benötigen wir 'Headphone' oder was auch immer bei dir steht!
+
+Gib diesen Wert in den Skill-Einstellungen unter "portname" ein.
+
+Zurück im Terminal:
 
  - `` `aplay -l```
  
-   und sehen, was Ihre Kartennummer ist. Wählen Sie dann, dass aus der Dropdown-Liste in den Fähigkeiten Einstellungen
+Schau nach was deine Kartennummer ist. Wähle sie im Dropdown-Menü der Skilleinstellungen aus!
 
-Beispiel: respeaker 2 ist wahrscheinlich Karte 1
+Beispiel: respeaker2 ist wahrscheinlich Karte 1
    
- 
-Bitte besprechen Sie in Zwietracht etwaige Ergänzungen Sie diesen Bedarf finden hinzugefügt.
+Für weitere Features, Änderungen oder Fehler, sprich uns in Discord an!
