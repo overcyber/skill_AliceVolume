@@ -1,10 +1,18 @@
 {
 	"dialogMessage1": {
 		"default": [
-			"set to {0}",
-			"Volume is now at {0}",
-			"Audio level is now {0}",
-			"Done. sound level set to {0}",
+			"oops, Something went wrong. Please check you've selected the correct audio card in the skill settings"
+		],
+		"short": [
+			"Please re check your skill settings"
+		]
+	},
+	"dialogMessage2": {
+		"default": [
+			"{0} to {1}",
+			"Volume is now {0} to {1}",
+			"Audio level is now {0} to {1}",
+			"Done. sound level {0} to {1}",
 			"ok",
 			"done",
 			"sure"

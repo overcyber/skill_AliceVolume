@@ -14,26 +14,13 @@ Alternatively increase or decrease the volume with
 
 In the pi's terminal type 
 
-- ```amixer```
-
-You should see a line similar to this :
-
-- ```Simple mixer control 'Headphone',0```
-
-What your looking for is the 'Headphone' or maybe you have "Headphones" or 'Master' etc 
-
-Enter what ever it is that you have when doing that command, into the "portName" field 
-of the skill settings
-
-then do
-
  - ```aplay -l```
  
    and see what your card number is. Then select that from the drop list in the skill settings
 
-EG: respeaker 2 is likely card 1
+EG: respeaker 2 is likely card 1 
    
- 
+ NOTE: if you choose nothing it will default to card0
 
 Please discuss in discord any additions you find that need added.
 
