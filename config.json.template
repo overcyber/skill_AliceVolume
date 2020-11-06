@@ -9,5 +9,11 @@
 			"audio card 2": "-c2"
 		},
 		"description": "Choose audio port your using"
+	},
+	"forceAudioPort": {
+		"defaultValue": "",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "Manually enter audio port"
 	}
 }

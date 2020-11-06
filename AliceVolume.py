@@ -45,8 +45,10 @@ class AliceVolume(AliceSkill):
 		# return the system message so we can extract portName
 		portResult = self.Commons.runSystemCommand(f'amixer')
 		# extract the portName
-		portName = re.findall(r"'(.*?)'", portResult.stdout.decode('utf-8'))
-
+		if self.getConfig('forceAudioPort'):
+			portName = self.getConfig('forceAudioPort')
+		else:
+			portName = re.findall(r"'(.*?)'", portResult.stdout.decode('utf-8'))
 
 		# run the volume changing system command
 		result = self.Commons.runSystemCommand(f'amixer {card} -M -q set {portName[0]} {level}'.split())

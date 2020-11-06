@@ -22,6 +22,15 @@ EG: respeaker 2 is likely card 1
    
  NOTE: if you choose nothing it will default to card0
 
+### forceAudioPort field
+
+In normal operation your audio output field will get auto detected. However if you require 
+a different port than what it detects you can enter the port name into this field.
+
+- leave this blank to auto detect the port
+- Add port name EG: Headphones to Specifically use the Headphones port
+
+
 Please discuss in discord any additions you find that need added.
 
-
+- 
