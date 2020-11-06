@@ -46,7 +46,7 @@ class AliceVolume(AliceSkill):
 		portResult = self.Commons.runSystemCommand(f'amixer')
 		# extract the portName
 		if self.getConfig('forceAudioPort'):
-			portName = self.getConfig('forceAudioPort')
+			portName = [self.getConfig('forceAudioPort')]
 		else:
 			portName = re.findall(r"'(.*?)'", portResult.stdout.decode('utf-8'))
 
