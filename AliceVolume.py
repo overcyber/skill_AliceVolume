@@ -56,7 +56,7 @@ class AliceVolume(AliceSkill):
 		# if no error code
 		if not result.returncode:
 			# get the true volume level for the dialog output
-			amixerResult = self.Commons.runSystemCommand(f'amixer -M get {portName[0]}'.split())
+			amixerResult = self.Commons.runSystemCommand(f'amixer {card} -M get {portName[0]}'.split())
 			spokenLevel = re.findall(r"\[(.*?)]", amixerResult.stdout.decode('utf-8'))
 
 			action = ['set', 'lowered', 'raised']
