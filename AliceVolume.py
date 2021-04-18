@@ -43,7 +43,7 @@ class AliceVolume(AliceSkill):
 	def adjustVolumePi(self, level: str, card: str, sessionId):
 
 		# return the system message so we can extract portName
-		portResult = self.Commons.runSystemCommand(f'amixer')
+		portResult = self.Commons.runSystemCommand(['amixer'])
 		# extract the portName
 		if self.getConfig('forceAudioPort'):
 			portName = [self.getConfig('forceAudioPort')]
