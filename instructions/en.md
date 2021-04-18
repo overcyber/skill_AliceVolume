@@ -1,6 +1,6 @@
-<span style="color: #ff0000;"><strong>Use this skill to adjust the volume of Alice on the fly</strong></span>
+##Use this skill to adjust the volume of Alice on the fly
 
-just say something like 
+Just say something like 
 
 - Hey Alice/Snips
 - 40 percent, or set volume to 60 percent or adjust volume to 10 percent etc
@@ -10,7 +10,7 @@ Alternatively increase or decrease the volume with
 - Hey Alice/Snips
 - raise the volume 5 percent, or decrease volume by 20 percent etc
 
-#SETUP
+##SETUP
 
 In the pi's terminal type 
 
@@ -33,4 +33,4 @@ a different port than what it detects you can enter the port name into this fiel
 
 Please discuss in discord any additions you find that need added.
 
-- 
+ 
