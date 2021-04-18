@@ -1,4 +1,4 @@
-##Use this skill to adjust the volume of Alice on the fly
+## Use this skill to adjust the volume of Alice on the fly
 
 Just say something like 
 
@@ -10,7 +10,7 @@ Alternatively increase or decrease the volume with
 - Hey Alice/Snips
 - raise the volume 5 percent, or decrease volume by 20 percent etc
 
-##SETUP
+## SETUP
 
 In the pi's terminal type 
 

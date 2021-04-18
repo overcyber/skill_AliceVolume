@@ -1,7 +1,7 @@
 {
     "name": "AliceVolume",
     "speakableName": "adjust audio volume",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "icon": "fas fa-volume-up",
     "category": "assistance",
     "author": "lazza",
