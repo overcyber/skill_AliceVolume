@@ -1,0 +1,45 @@
+{
+	"dialogMessage1": {
+		"default": [
+			"Opa, algo deu errado. Por favor, verifique se você selecionou a placa de áudio correta nas configurações de habilidade"
+		],
+		"short"  : [
+			"Por favor, verifique suas configurações de habilidade"
+		]
+	},
+	"dialogMessage2": {
+		"default": [
+			"{0} to {1}",
+			"O volume agora foi {0} para {1}",
+			"Nível do áudio agora foi {0} para {1}",
+			"Feito. nivel do som {0} para {1}",
+			"ok",
+			"Feito",
+			"Claro"
+		],
+		"short"  : [
+			"ok"
+		]
+	},
+	"raised"        : {
+		"default": [
+			"aumentado",
+			"amplicado",
+			"amplificado"
+		]
+	},
+	"lowered"       : {
+		"default": [
+			"reduzido",
+			"abaixado",
+			"diminuido"
+		]
+	},
+	"set"           : {
+		"default": [
+			"ajustado",
+			"alterado",
+			"mudado"
+		]
+	}
+}

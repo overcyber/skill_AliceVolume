@@ -1,24 +1,42 @@
 {
 	"dialogMessage1": {
 		"default": [
-			"oops, Something went wrong. Please check you've selected the correct audio card in the skill settings"
+			"oops, da ist was schief gelaufen. Bitte prüfe ob die korrekte Soundkarte in den Skill Einstellungen gewählt hast"
 		],
 		"short": [
-			"Please re check your skill settings"
+			"Bitte prüfe deine Skill Einstellungen"
 		]
 	},
 	"dialogMessage2": {
 		"default": [
-			"{0} to {1}",
-			"Volume is now {0} to {1}",
-			"Audio level is now {0} to {1}",
-			"Done. sound level {0} to {1}",
+			"{0} auf {1}",
+			"Die Lautstärke ist jetzt auf {1} {0}",
+			"Lautstärke auf {1} {0}",
+			"Erledigt. Lautstärke {0} auf {1}",
 			"ok",
 			"done",
 			"sure"
 		],
-		"short": [
+		"short"  : [
 			"ok"
+		]
+	},
+	"raised"        : {
+		"default": [
+			"erhöht"
+		]
+	},
+	"lowered"       : {
+		"default": [
+			"reduziert",
+			"verringert"
+		]
+	},
+	"set"           : {
+		"default": [
+			"gesetzt",
+			"geändert",
+			"angepasst"
 		]
 	}
 }

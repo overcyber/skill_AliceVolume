@@ -17,8 +17,26 @@
 			"done",
 			"sure"
 		],
-		"short": [
+		"short"  : [
 			"ok"
+		]
+	},
+	"raised"        : {
+		"default": [
+			"raised",
+			"increased"
+		]
+	},
+	"lowered"       : {
+		"default": [
+			"lowered",
+			"decreased"
+		]
+	},
+	"set"           : {
+		"default": [
+			"set",
+			"changed"
 		]
 	}
 }

@@ -1,0 +1,96 @@
+{
+	"skill"    : "AliceVolume",
+	"slotTypes": [
+		{
+			"name"                   : "raiseVolume",
+			"matchingStrictness"     : null,
+			"automaticallyExtensible": true,
+			"useSynonyms"            : true,
+			"values"                 : [
+				{
+					"value"   : "raise",
+					"synonyms": [
+						"aumentar",
+						"louder",
+						"aumente",
+						"mais alto"
+					]
+				}
+			]
+		},
+		{
+			"name"                   : "lowerVolume",
+			"matchingStrictness"     : null,
+			"automaticallyExtensible": true,
+			"useSynonyms"            : true,
+			"values"                 : [
+				{
+					"value"   : "lower",
+					"synonyms": [
+						"reduzir",
+						"reduza",
+						"diminua",
+						"abaixe",
+						"diminuir",
+						"silencio"
+					]
+				}
+			]
+		}
+	],
+	"intents"  : [
+		{
+			"name"            : "setSoundLevel",
+			"enabledByDefault": true,
+			"utterances"      : [
+				"defina o volume em {50 porcento:=>volume}",
+				"{30 porcento:=>volume}",
+				"mude o volume para {20 porcento:=>volume}",
+				"altera o volume para {10 porcento:=>volume}"
+			],
+			"slots"           : [
+				{
+					"name"           : "volume",
+					"required"       : false,
+					"type"           : "snips/porcentoage",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name"            : "adjustVolume",
+			"enabledByDefault": true,
+			"utterances"      : [
+				"{aumente:=>raiseVolume} volume para {10 porcento:=>volume}",
+				"{abaixe:=>lowerVolume} volume para {30 porcento:=>volume}",
+				"{increase:=>raiseVolume} volume {5 porcento:=>volume}",
+				"{increase:=>raiseVolume} volume para {13 porcento:=>volume}",
+				"{decrease:=>lowerVolume} volume para {23 porcento:=>volume}",
+				"{abaixe:=>lowerVolume} som para {80 porcento:=>volume}",
+				"{diminua:=>lowerVolume} volume para {54 porcento:=>volume}",
+				"deixe {13 porcento:=>volume} {silencioso:=>lowerVolume} por favor",
+				"deixe {64 porcento:=>volume} {mais alto:=>raiseVolume} por favor"
+			],
+			"slots"           : [
+				{
+					"name"           : "volume",
+					"required"       : false,
+					"type"           : "snips/porcentoage",
+					"missingQuestion": ""
+				},
+				{
+					"name"           : "lowerVolume",
+					"required"       : false,
+					"type"           : "lowerVolume",
+					"missingQuestion": ""
+				},
+				{
+					"name"           : "raiseVolume",
+					"required"       : false,
+					"type"           : "raiseVolume",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}

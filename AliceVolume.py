@@ -63,7 +63,7 @@ class AliceVolume(AliceSkill):
 
 			self.endDialog(
 				sessionId=sessionId,
-				text=self.randomTalk(text="dialogMessage2", replace=[action[AliceVolume._ADJUSTED_VOLUME], spokenLevel[0]])
+				text=self.randomTalk(text="dialogMessage2", replace=[self.randomTalk(text=action[AliceVolume._ADJUSTED_VOLUME]), spokenLevel[0]])
 			)
 
 			AliceVolume._ADJUSTED_VOLUME = 0
