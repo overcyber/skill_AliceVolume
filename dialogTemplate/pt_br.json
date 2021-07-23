@@ -52,7 +52,7 @@
 				{
 					"name"           : "volume",
 					"required"       : false,
-					"type"           : "snips/porcentoage",
+					"type"           : "snips/percentage",
 					"missingQuestion": ""
 				}
 			]
