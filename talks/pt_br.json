@@ -20,5 +20,26 @@
 		"short"  : [
 			"ok"
 		]
+	},
+	"raised"        : {
+		"default": [
+			"aumentado",
+			"amplicado",
+			"amplificado"
+		]
+	},
+	"lowered"       : {
+		"default": [
+			"reduzido",
+			"abaixado",
+			"diminuido"
+		]
+	},
+	"set"           : {
+		"default": [
+			"ajustado",
+			"alterado",
+			"mudado"
+		]
 	}
 }
