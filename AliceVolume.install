@@ -6,7 +6,7 @@
     "category": "assistance",
     "author": "lazza",
     "maintainers": ["overcyber"],
-    "desc": "Control the volume of Alice",
+    "desc": "Control the volume of Alice ",
     "aliceMinVersion": "1.0.0-b3",
     "pipRequirements": [],
     "systemRequirements": [],
