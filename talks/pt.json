@@ -9,7 +9,7 @@
 	},
 	"dialogMessage2": {
 		"default": [
-			"{0} to {1}",
+			"{0} para {1}",
 			"O volume agora foi {0} para {1}",
 			"Nível do áudio agora foi {0} para {1}",
 			"Feito. nivel do som {0} para {1}",
