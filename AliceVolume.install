@@ -1,12 +1,14 @@
 {
     "name": "AliceVolume",
     "speakableName": "adjust audio volume",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "icon": "fas fa-volume-up",
     "category": "assistance",
     "author": "lazza",
-    "maintainers": ["overcyber",
-    				"philipp2310"],
+    "maintainers": [
+        "overcyber",
+        "philipp2310"
+    ],
     "desc": "Control the volume of Alice ",
     "aliceMinVersion": "1.0.0-b3",
     "pipRequirements": [],
