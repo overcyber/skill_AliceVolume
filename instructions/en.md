@@ -12,6 +12,7 @@ Alternatively increase or decrease the volume with
 
 ## SETUP
 
+
 In the pi's terminal type 
 
  - ```aplay -l```
@@ -33,4 +34,9 @@ a different port than what it detects you can enter the port name into this fiel
 
 Please discuss in discord any additions you find that need added.
 
- 
+### Day / Night mode
+
+With "night mode volume" switch enabled (found in the skill settings)
+
+- Alice will set the volume automatically to the "Day Time Level" when you say "good morning" to alice
+- Alice will set the volume automatically to the "night time level" when you say "good night"
