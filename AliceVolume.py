@@ -61,18 +61,40 @@ class AliceVolume(AliceSkill):
 
 			action = ['set', 'lowered', 'raised']
 
-			self.endDialog(
-				sessionId=sessionId,
-				text=self.randomTalk(text="dialogMessage2", replace=[self.randomTalk(text=action[AliceVolume._ADJUSTED_VOLUME]), spokenLevel[0]])
-			)
+			if sessionId:
+				self.endDialog(
+					sessionId=sessionId,
+					text=self.randomTalk(text="dialogMessage2", replace=[self.randomTalk(text=action[AliceVolume._ADJUSTED_VOLUME]), spokenLevel[0]])
+				)
 
 			AliceVolume._ADJUSTED_VOLUME = 0
 
 
 		else:
-			self.endDialog(
-				sessionId=sessionId,
-				text=self.randomTalk(text="dialogMessage1")
-			)
+			if sessionId:
+				self.endDialog(
+					sessionId=sessionId,
+					text=self.randomTalk(text="dialogMessage1")
+				)
 			AliceVolume._ADJUSTED_VOLUME = 0
 			return self.logError(f'Error with {self.name} configuration. Have you selected the right card ?: {result.stderr}')
+
+
+	def onSleep(self):
+		self.autoAdjustVolume(dayOrNight="night")
+
+	def onWakeup(self):
+		self.autoAdjustVolume(dayOrNight="day")
+
+
+	def autoAdjustVolume(self, dayOrNight: str):
+		if self.getConfig('nightModeVolume'):
+			level = self.getConfig(f'{dayOrNight}TimeLevel')
+			if not level:
+				if dayOrNight == "night":
+					level = "10"
+				else:
+					level = "80"
+
+			self.adjustVolumePi(level=f'{level}%', card=self.getConfig('audioOut'), sessionId="")
+

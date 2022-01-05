@@ -15,5 +15,23 @@
 		"dataType": "string",
 		"isSensitive": false,
 		"description": "Manually enter audio port"
+	},
+	"nightTimeLevel": {
+		"defaultValue": "10",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "Volume down on good night"
+	},
+	"dayTimeLevel": {
+		"defaultValue": "80",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "Volume up on good morning"
+	},
+	"nightModeVolume": {
+		"defaultValue": false,
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "Set new volume when in night mode"
 	}
 }
